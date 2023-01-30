@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de veículos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container w-50 mt-5">
+        <form action="https://api.sheetmonkey.io/form/7qLPe34ArUq7vZ6Ws2autt" method="post" class="p-5">
+            <h2 class="text-center">Cadastro de veículos</h2>
+            <hr>
+            <div class="row g-2">
+                <div class="col-md-2">
+                    <label for="placa" class="form-label mb-0">Placa</label>
+                    <input type="text" id="placa" name="placa" class="form-control form-control-sm" maxlength="7" required>
+                </div>
+                <div class="col-md-2">
+                    <label for="ordem" class="form-label mb-0">Ordem nº</label>
+                    <input type="text" id="ordem" name="ordem" class="form-control form-control-sm" required>
+                </div>
+            </div>
+            <div class="row g-2">
+                <div class="col-md-6">
+                    <label for="renavam" class="form-label mb-0">Renavam</label>
+                    <input type="number" name="renavam" id="renavam" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="chassi" class="form-label mb-0">Chassi</label>
+                    <input type="text" name="chassi" id="chassi" class="form-control" required>
+                </div>
+            </div>
+            <div class="row g-2">
+                <div class="col-md-4">
+                    <label for="modelo" class="form-label mb-0">Modelo</label>
+                    <input type="text" name="modelo" id="modelo" class="form-control" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="marca" class="form-label mb-0">Marca</label>
+                    <input type="text" name="marca" id="marca" class="form-control" required>
+                </div>
+                <div class=" col-md-2">
+                    <label for="ano" class="form-label mb-0">Ano Modelo</label>
+                    <input type="number" name="anoMod" id="ano" class="form-control" required>
+                </div>
+                <div class="col-md-2">
+                    <label for="ano" class="form-label mb-0">Fabricação</label>
+                    <input type="number" name="anoFab" id="ano" class="form-control" required>
+                </div>
+            </div>
+            <div class="row g-2">
+                <div class="col-sm-4">
+                    <label for="cor" class="form-label mb-0">Cor</label>
+                    <input type="text" name="cor" id="cor" class="form-control" required>
+                </div>
+                <div class="col-sm-4">
+                    <label for="lotacao" class="form-label mb-0">Lotação</label>
+                    <input type="number" name="lotacao" id="lotacao" class="form-control" required>
+                </div>
+                <div class="col-sm-4">
+                    <label for="combustivel" class="form-label mb-0">Combustível</label>
+                    <input type="text" name="combustivel" id="combustivel" class="form-control" required>
+                </div>
+            </div>
+            <div class="row g-2">
+                <div class="col-md-6">
+                    <label for="proprietario" class="form-label mb-0">Proprietário</label>
+                    <input type="text" name="proprietario" id="proprietario" class="form-control" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="cidade" class="form-label mb-0">Cidade</label>
+                    <input type="text" name="cidade" id="cidade" class="form-control" required>
+                </div>
+                <div class="col-md-2">
+                    <label for="estado" class="form-label mb-0">Estado</label>
+                    <select class="form-select" id="estado" name="estado" required>
+                        <option selected>UF...</option>
+                        <option value="1">AC</option>
+                        <option value="2">AL</option>
+                        <option value="3">AP</option>
+                        <option value="4">AM</option>
+                        <option value="5">BA</option>
+                        <option value="6">CE</option>
+                        <option value="7">DF</option>
+                        <option value="8">ES</option>
+                        <option value="9">GO</option>
+                        <option value="10">MA</option>
+                        <option value="11">MT</option>
+                        <option value="12">MS</option>
+                        <option value="13">MG</option>
+                        <option value="14">PA</option>
+                        <option value="15">PB</option>
+                        <option value="16">PR</option>
+                        <option value="17">PE</option>
+                        <option value="18">PI</option>
+                        <option value="19">RR</option>
+                        <option value="20">RO</option>
+                        <option value="21">RJ</option>
+                        <option value="22">RN</option>
+                        <option value="23">RS</option>
+                        <option value="24">SC</option>
+                        <option value="25">SP</option>
+                        <option value="26">SE</option>
+                        <option value="27">TO</option>
+                      </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col pb-3">
+                    <label for="obs" class="form-label mb-0">Observações</label>
+                    <textarea name="obs" id="obs" class="form-control" style="resize: none;"></textarea>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <button type="submit" class="btn btn-primary px-5 mx-3">Enviar</button>
+                    <button type="reset" class="btn btn-secondary px-5 mx-3">Limpar</button>
+                </div>
+            </div>
+            <hr>
+
+            <footer class="footer text-center">
+                <span class="text-muted">&copy;2023 | Desenvolvido por Josimar Nascimento</span>
+            </footer>
+        </form>
+    </div>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</body>
+</html>
